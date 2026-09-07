@@ -29,6 +29,7 @@ The two unified-NTT repositories expose the same arithmetic direction through di
 
 | Project | Focus |
 |---|---|
+| [ESP32-S3 ML-DSA Kronecker+](https://github.com/dlwotjr/esp32s3-mldsa-kronecker-plus) | Reuses the ESP32-S3 RSA MODMULT accelerator for ML-DSA polynomial products; covers `c·s`, `c·t1`, constant-time `c·t0`, parameter-width analysis, board benchmarks, and Xtensa CT/GS butterfly assembly |
 | [Cryptographic module](https://github.com/dlwotjr/crypto_module) | Educational module combining ARIA, SHA-3/HMAC, Hash_DRBG, P-256 ECDH, ML-KEM-768, self-tests, integrity checks, and state enforcement |
 | [Falcon implementation profiling](https://github.com/dlwotjr/falcon_profile) | Self-contained Falcon-512/1024 implementation and gprof analysis of KeyGen, Sign, and Verify under `-O0` and `-O3` |
 | [Big-number library](https://github.com/dlwotjr/Big-number-library-Project) | C big-integer arithmetic, modular reduction/inversion, elliptic-curve operations, and educational fixed-width ECDH |
@@ -36,7 +37,7 @@ The two unified-NTT repositories expose the same arithmetic direction through di
 ## Technical stack
 
 - **Languages:** C, C++, CUDA, Verilog/SystemVerilog, Python
-- **Hardware:** Xilinx Vivado/Vitis, Zynq, Ibex/RISC-V, Verilator, FuseSoC, AXI4-Lite, AXI4-Stream, AXI BRAM Controller, RTL simulation and timing closure
+- **Hardware:** Xilinx Vivado/Vitis, Zynq, ESP32-S3/Xtensa LX7, Ibex/RISC-V, Verilator, FuseSoC, AXI4-Lite, AXI4-Stream, AXI BRAM Controller, RTL simulation and timing closure
 - **Cryptography:** NTT-based PQC, Falcon, ML-KEM, ML-DSA, NCC-Sign, AES/LEA-GCM, ARIA, SHA-3
 - **Engineering:** HW/SW co-design, performance profiling, reproducible builds, KAT and regression testing
 
