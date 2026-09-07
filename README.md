@@ -12,6 +12,7 @@ I work across RTL accelerator architecture, FPGA/software integration, CUDA para
 | [Unified NTT — AXI BRAM](https://github.com/dlwotjr/unified-ntt-axi-bram-mc) | Memory-mapped counterpart with packed 32-bit coefficient storage and direct AXI BRAM Controller access; includes BRAM/CDMA variants and board artifacts |
 | [NCC-Sign HW/SW co-design](https://github.com/dlwotjr/HW-SW-codesign-implementation-on-Ncc-Sign-algorithm) | Zynq accelerator integrating NTT/INTT, point-wise multiplication, and Keccak with embedded signing software |
 | [JS_NTT](https://github.com/dlwotjr/JS_NTT) | Configurable radix-2/radix-3 NTT accelerator RTL and software-reference simulation material |
+| [Ibex RISC-V custom instruction & PQC lab](https://github.com/dlwotjr/ibex-pqc-experiments) | Ibex CUSTOM-0 decoder/ALU integration, inline-assembly verification, and bare-metal ML-KEM, ML-DSA, and Falcon porting on Verilator |
 | [FPGA/Verilog RTL design textbook](https://github.com/dlwotjr/FPGA-RTL-) | Self-authored Korean guide connecting RTL coding styles to LUT, FF, carry-chain, DSP, BRAM, timing, and routing results |
 | [HDLBits practice](https://github.com/dlwotjr/HDL_Bits) | Verilog exercise solutions and Korean digital-design study notes |
 
@@ -35,8 +36,8 @@ The two unified-NTT repositories expose the same arithmetic direction through di
 ## Technical stack
 
 - **Languages:** C, C++, CUDA, Verilog/SystemVerilog, Python
-- **Hardware:** Xilinx Vivado/Vitis, Zynq, AXI4-Lite, AXI4-Stream, AXI BRAM Controller, RTL simulation and timing closure
-- **Cryptography:** NTT-based PQC, Falcon, ML-KEM, NCC-Sign, AES/LEA-GCM, ARIA, SHA-3
+- **Hardware:** Xilinx Vivado/Vitis, Zynq, Ibex/RISC-V, Verilator, FuseSoC, AXI4-Lite, AXI4-Stream, AXI BRAM Controller, RTL simulation and timing closure
+- **Cryptography:** NTT-based PQC, Falcon, ML-KEM, ML-DSA, NCC-Sign, AES/LEA-GCM, ARIA, SHA-3
 - **Engineering:** HW/SW co-design, performance profiling, reproducible builds, KAT and regression testing
 
 Each repository README identifies whether the work is research, coursework, educational material, or a reproducibility package, together with its build and validation scope.
